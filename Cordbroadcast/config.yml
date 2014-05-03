@@ -1,0 +1,5 @@
+debug-mode: false
+color-logs: true
+##Default broadcastcoords message
+broadcast-format: "&b{name} &7is at World&f: &3{world} &7Coords &f: &7X: &c{x}&7 , &7Z: &c{z}"
+

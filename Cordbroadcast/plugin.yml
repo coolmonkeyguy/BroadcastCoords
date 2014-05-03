@@ -1,0 +1,26 @@
+name: BroadcastCoords
+main: main.java.net.pl3x.broadcastcoords.BroadcastCoords
+version: 1.2
+//Original Author: BillyGalbreath
+author: Coolmonkeyguy
+description: Broadcast a player coordinates to all users.
+commands:
+    coords:
+        description: Broadcast a player coordinates to all users.
+        usage: /<command> [player]
+        aliases: [bcoords, broadcastcoords, shoutcoords, showcoords]
+    bcreload:
+        description: reloads plugin config!
+        aliases: [breload, CoordsReload]
+permissions:
+    bc.broadcastcoords:
+        description: Allows you to use coords command.
+        default: op
+    bc.bcreload:
+        description: Allows you to use bcreload command.
+        default: op
+    bc.*:
+        description: Gives every permission.
+        default: false
+        children:
+            bc.coords: true
